@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>메모</title>
+	</head>
+<body>
+	<h1>도전문제- 메모,포토 업로드</h1>
+	<br>
+	<form method="post" enctype="multipart/form-data" action="/challenge/memo" >
+		<table>
+			<tr>
+				<td><label>작성자</label></td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td><label>작성일시</label></td>
+				<td><input type="date" name="date" /></td>
+			</tr>
+            <tr>
+				<td><label>메모내용</label></td>
+				<td><input type="text" name="info" /></td>
+			</tr>
+            <tr>
+				<td><label>파일</label></td>
+				<td><input type="file" name="photo" /></td>
+			</tr>
+		</table>
+		<input type="submit" value="저장" name=""/>
+
+	</form>
+</body>
+</html>
