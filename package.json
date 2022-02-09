@@ -1,0 +1,25 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ch7_memo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoonveloper/NodejsStudy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hoonveloper/NodejsStudy/issues"
+  },
+  "homepage": "https://github.com/Hoonveloper/NodejsStudy#readme",
+  "dependencies": {
+    "express-error-handler": "^1.1.0",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.2.1",
+    "multer": "^1.4.4"
+  }
+}

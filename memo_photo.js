@@ -25,7 +25,7 @@ var storage= multer.diskStorage({
 
     },
     filename: function(req,file,callback) {
-        callback(null,file.originalname+Date.now());
+        callback(null,file.originalname);
 
     }
 });
@@ -81,6 +81,7 @@ router.route('/challenge/memo').post( upload.array('photo',1),function(req,res) 
 	res.write('<div><p>Param 내용 : ' + parammemo+ '</p></div>');
 	res.write('<br><br>');
     res.write('<h3>파일 업로드 성공</h3>');
+    res.write(`<img src=/uploads/${org_name}>`);
     res.write('<p>원본 파일명 : ' + org_name + ' -> 저장 파일명 : ' + filename + '</p>');
 	res.write('<p>MIME TYPE : ' + mimetype + '</p>');
 	res.write('<p>파일 크기 : ' + size + '</p>');
